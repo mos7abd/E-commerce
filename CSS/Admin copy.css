@@ -1,0 +1,291 @@
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #000000;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+    --third-color: #e91010;
+  }
+/* End Variables */
+/* Start Global ruls */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+ 
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Start Header Section */
+.icon h3 {
+    color: var(--third-color);
+}
+.icon i {
+    color: var(--third-color);
+}
+.header{
+  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+ /* height: 100px; */
+}
+.icon i {
+    font-size: 30px;
+    padding: 10px 0;
+    color: var(--section-background);
+
+}
+.lists ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 60%;
+
+}
+.lists li {
+    padding-left: 30px;
+    list-style: none;
+}
+.lists a {
+    color: var(--section-background);
+    text-decoration:none;
+    transition: 0.5s ease;
+    font-weight: bold;
+  
+}
+.lists a .i-1 {
+    position: relative;
+}
+.lists a:hover {
+    color: var(--third-color);
+}
+
+.lists {
+    margin-left: 80px;
+}
+.start-login {
+    margin-top: 15px;
+    margin-right: 15px;
+
+    
+}
+
+.tableCategory .de,
+.tableProduct .de {
+    background-color: #e91010;
+}
+
+.start-login a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: var(--section-background);
+
+}
+.search input {
+    margin-top: 8px;
+    margin-left: -80px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    width: 400px;
+    position: relative;
+
+}
+.search .fa-sharp {
+    color: var(--section-background);
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 15px;
+    color: var(--secondary-color);
+
+
+}
+.fa-solid {
+    font-size: 25px;
+}
+.categoryForm {
+    box-shadow: 5px 5px 20px #000;
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#buttoncategory {
+    background-color: #000;
+    color: #ffff;
+}
+#productForm,#categoryForm {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+     font-size: 20px;
+    font-weight: bold;
+    
+    box-shadow: 5px 5px 20px #000;
+}
+#productForm button {
+    background-color: #000;
+    color: #fff;
+}
+
+
+#validname{
+    margin: 0px;
+    color: red;
+    text-align: center;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.tableProduct,.tableCategory {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000;
+    
+
+}
+
+.tableProduct th, .tableProduct td ,.tableCategory th,.tableCategory td{
+    border: 2px solid #000; 
+    padding: 8px;
+    text-align: left;
+}
+
+.tableProduct th,.tableCategory th {
+    background-color: #f2f2f2; 
+}
+
+
+.tableProduct tbody tr:nth-child(even),.tableCategory tbody tr:nth-child(even){
+    background-color: #f9f9f9; 
+}
+
+/* Hover effect for rows */
+.tableProduct tbody tr:hover ,.tableCategory tbody tr:hover {
+    background-color: #d4d4d4; /* Hovered row background color */
+}
+
+/* Optional: Style for update and delete buttons */
+.tableProduct .update, .tableProduct .delete ,.tableCategory .update ,.tableCategory .delete{
+    cursor: pointer;
+    color: #007bff; /* Link color */
+    text-decoration: underline;
+}
+
+.tableProduct .update:hover, .tableProduct .delete:hover ,.tableCategory .update:hover ,.tableCategory .delete:hover{
+    color: #0056b3; /* Hovered link color */
+}
+
+#userRequests #previousRequests {
+    margin-top: 30px;
+}
+
+.tableRequests .tablePreviousRequests{
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.tableRequests th, .tableRequests td ,.tablePreviousRequests th ,.tablePreviousRequests td{
+    border: 2px solid #000; 
+    padding: 8px;
+    text-align: left;
+}
+
+.tableRequests th ,.tablePreviousRequests th{
+    background-color: #f2f2f2; 
+}
+
+.tableRequests tbody tr:nth-child(even) ,.tablePreviousRequests tbody tr:nth-child(even){
+    background-color: #f9f9f9; 
+}
+
+.tableRequests tbody tr:hover,.tablePreviousRequests tbody tr:hover {
+    background-color: #d4d4d4;
+}
+
+/* .tableRequests .process {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.tableRequests .process:hover {
+    color: #0056b3;
+} */
+
+/* Add styles for the accept and refuse buttons */
+.tableRequests th, .tableRequests td ,.tablePreviousRequests th ,.tablePreviousRequests td{
+    /* Existing styles for table headers and cells */
+
+    /* New styles for accept and refuse buttons */
+    text-align: center;
+}
+
+.tableRequests th:nth-child(7), .tableRequests td:nth-child(7) {
+    /* Styles for the "Actions" column (accept and refuse buttons) */
+    width: 120px;
+}
+
+.tableRequests button {
+    /* Styles for the accept and refuse buttons */
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.tableRequests button:hover {
+    /* Hover styles for the buttons */
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tableRequests button:active {
+    /* Active (click) styles for the buttons */
+    background-color: #45a049;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <!-- Render all elemnts normaly -->
+    <link rel="stylesheet" href="/CSS/Normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Login Page</title>
+</head>
+<body>
+    <!--Start Header Section  -->
+<div class="header">
+    <div class="icon">
+        <i class="fa-solid fa-robot" style="color: #ff0000;"></i><i class="fa-brands fa-redhat" style="color: #ff0202; letter-spacing: 1px;" >MrRobot</i>     
+    </div>
+<div class="start-login">
+<a href="#">Login</a>
+<a href="#">Sign in</a>
+<i class="fa-solid fa-cart-shopping" style="color: #dbd1d1;"></i>
+</div>
+</div>
+<!-- End Header Section -->
+    <div class="login-container">
+        <h2>login   <i class="fa-solid fa-robot" style="color: #ff0000;"></i> </h2>
+        <form method="post" action="home.html" id="loginForm">
+            <input type="text" id="email" placeholder="Email" required><br><br>
+            <span id="emailError" hidden style="color: red;">this Email dont registed</span>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <span id="passwordError" hidden style="color: red;">password is in correct</span>
+            <button type="submit" onclick="validateLogin(event)">login</button>
+            <a href="regis.html">Go To Sign Up</a>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

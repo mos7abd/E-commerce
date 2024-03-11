@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Render all elemnts normaly -->
+        <link rel="stylesheet" href="CSS/Normalize.css">
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!-- Main Template css file-->
+        <link rel="stylesheet" href="CSS/home.css">
+    <title>Home Page</title>
+</head>
+<body>
+  
+<!--Start Header Section  -->
+<div class="header">
+    <a class="icon" href="home.html">
+        <i class="fa-solid fa-robot" style="color: #ff0000;"></i><i class="fa-brands fa-redhat" style="color: #ff0202; letter-spacing: 1px;">MrRobot</i>     
+    </a>
+<div class="lists">
+    <ul>
+        <li><a class="i-1" href="home.html">Home</a></li>
+        <li><a class="i-2" href="#imgs-sec1">Phone</a></li>
+        <li><a class="i-3" href="#sec-3">Accessories</a></li>
+        <li><a class="i-4" href="#imgs-sec3">Laps</a></li>
+        <li><a class="i-5" href="#imgs-sec3">Tablets</a></li>
+    </ul>
+</div>
+<div class="search">
+    <input type="text" name="text" placeholder="Search">
+    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+</div>
+<div class="start-login">
+<i class="fa-solid fa-user" style="color: #dbd1d1;"></i>
+<i class="fa-sharp fa-regular fa-heart" onclick="getwish ()" style="color: #dbd1d1;"></i>
+<!-- <a href="login.html">Login</a> -->
+<a href="regis.html">Sign in</a>
+<a href="login.html" id="loginLogout">Login</a>
+<i class="fa-solid fa-cart-shopping" onclick="shopingCard() " style="color: #dbd1d1;"></i>
+</div>
+</div>
+<!-- End Header Section -->
+<!-- Start Bckground Site -->
+<div class="show">
+<div id="photos">
+    <img id="NowImage" src="IMAGE/712X384EN.png" alt="Gallery Image"/>
+
+</div>
+
+</div>
+
+<!-- End Bckground Site -->
+<div class="img">
+    <img src="" alt="">
+</div>
+<!-- Start Phone Section -->
+<div class="phone">
+    <div class="head">
+        <h2>Phone</h2>
+    </div>
+<div class="sec-1">
+    <div class="img-sec1-start">
+            <img src="IMAGE/1.jpg" alt="phones"> 
+    </div>
+    <div class="imgs-sec1" id="imgs-sec1">
+        <div class="cards">
+            <div class="card-1"id="card-1">
+                <div class="imag">
+                    <a href=""><img id="img1" src="IMAGE/2.jpg" alt=""></a>
+                </div>
+                <div class="contain">
+                    <!-- Start To Catch id And Send For Add in wishlist Html Page  -->
+                    <i onclick="getwish()" class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button onclick="shopingCard()" class="butt-sec1">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="imag">
+                    <a href=""><img src="IMAGE/3.jpg" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i id="iconHeart"class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="imag">
+                    <a href=""><img src="IMAGE/4.jpg" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()" class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-4">
+                <div class="imag">
+                    <a href=""><img src="IMAGE/5.jpg" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--End Phone Section -->
+<!-- Start Lap Section -->
+<div class="lap">
+    <div class="head">
+        <h2>Lap Top</h2>
+    </div>
+<div class="sec-2" id="sec-2">
+    <div class="img-sec2-start">
+            <img src="IMAGE/2.png" alt="phones"> 
+    </div>
+    <div class="imgs-sec2">
+        <div class="cards">
+            <div class="card-1">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/lap1.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button> 
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/lap2.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="imag">
+                    <a href=""><img id="p-2"src="IMAGE/lap3.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-4">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/lap2.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- End Lap Section -->
+<!-- Start accessories Section -->
+<div class="accessories">
+    <div class="head">
+        <h2 >Accessories</h2>
+    </div>
+<div class="sec-3" id="sec-3">
+    <div class="img-sec3-start">
+            <img src="IMAGE/accessories baner.png" alt="phones"> 
+    </div>
+    <div class="imgs-sec3" id="imgs-sec3">
+        <div class="cards">
+            <div class="card-1">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/access1.JPG" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()" class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button> 
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/access2.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()" class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/access3.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-4">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/lap2.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- End accessories Section -->
+<!-- Start Tablet Section -->
+<div class="tablet">
+    <div class="head">
+        <h2>Tablet</h2>
+    </div>
+<div class="sec-3">
+    <div class="img-sec3-start">
+            <img src="IMAGE/accessories baner.png" alt="phones"> 
+    </div>
+    <div class="imgs-sec3" id="imgs-sec3">
+        <div class="cards">
+            <div class="card-1">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/access1.jpg" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button> 
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/access2.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()" class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/access3.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card-4">
+                <div class="imag">
+                    <a href=""><img id="p-2" src="IMAGE/lap2.png" alt=""></a>
+                </div>
+                <div class="contain">
+                    <i onclick="getwish()"  class="fa-sharp fa-regular fa-heart" style="color: #000000;"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Star</p>
+                    <p>No featured offers available</p>
+                    <p>EGP 142.74(10 used & new offers)</p>
+                    <button class="butt-sec1" onclick="shopingCard()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- End Tablet Section -->
+
+<!-- Start Footer Section -->
+<div class="footer">
+<div class="first-section">
+    <div class="Get-Know">
+        <h4>Get to Know Us</h4>
+        <p>About MrRobot</p>
+        <p>Careers</p>
+        <p>MrRobot Science</p>
+        <p>Contact us</p>
+    </div>
+    <div class="Shop-Us">
+        <h4>Shop with Us</h4>
+        <p>Your Account</p>
+        <p>Your Orders</p>
+        <p>Your Addresses</p>
+        <p>Your Lists</p>
+    </div>
+    <div class="Make-Money">
+        <h3>Work Us</h3>
+        <p>Sell on MrRobot</p>
+        <p>Protect and build your brand</p>
+    </div>
+    <div class="Help">
+        <h4>Let Us Help You</h4>
+        <p>Help</p>
+        <p>Shipping & Delivery</p>
+        <p>Returns & Replacements</p>
+    </div>
+    <div class="sign-up">
+        <h4>Sign up & get 10% off your next order</h4>
+    
+        <div class="sochial">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+</div>
+<div class="scond-section">
+    <i class="fa-solid fa-robot" style="color: #ff0000;"></i><i class="fa-brands fa-redhat" style="color: #ff0202;">MrRobot</i>
+</div>
+<div class="third-section">
+    <p>&copy;2023, MrRobot.com, Inc.</p>
+</div>
+</div>
+<!-- End Footer Section -->
+<script src="wishlist.js"></script>
+<script src="home.js"></script>
+<script src="shoping.js"></script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/regis.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <title>صفحة التسجيل</title>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="icon">
+            <i class="fa-solid fa-robot" style="color: #ff0000;"></i><i class="fa-brands fa-redhat" style="color: #ff0202; letter-spacing: 1px;" >MrRobot</i>     
+        </div>
+    <div class="start-login">
+    <a href="#">Login</a>
+    <a href="#">Sign in</a>
+    <i class="fa-solid fa-cart-shopping" style="color: #dbd1d1;"></i>
+    </div>
+    </div>
+    <div class="container">
+        <h2>registeration</h2>
+        <form action="login.html" method="post">
+            <label for="username">user name</label>
+            <input type="text" id="username" name="username" required placeholder="user name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="username" required placeholder="Email">
+            <span id="emailError" hidden style="color: red;">Email must have charset capital , small and end by @gmail.com or @yahoo.com</span>
+            <span id="emailRigisted" hidden style="color: red;">This email has already been registered</span>
+
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required placeholder="password">
+            <span id="passwordErorr" hidden style="color: red;">Password must contain at least 1 char capital ,small, spitial char(@,%) and at least 8 char</span>
+
+            <label for="confirmPassword">confirmPassword</label>
+            <input type="password" id="confirmPassword" name="confirm_password" required placeholder="confirmPassword">
+            <span id="confirmPassword1" hidden style="color: red;">Password don t match</span>
+
+            <button id="registerButton" onclick="validateForm(event)" type="submit">sumbmit</button>
+        </form>
+    </div>
+    
+    <script src="regis.js"></script>
+</body>
+</html>

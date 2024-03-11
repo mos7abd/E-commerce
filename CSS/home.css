@@ -1,0 +1,421 @@
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #000000;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+    --third-color: #e91010;
+  }
+/* End Variables */
+/* Start Global ruls */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Start Header Section */
+
+.icon h3 {
+    color: var(--third-color);
+}
+.icon i {
+    color: var(--third-color);
+}
+.header{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 9px;
+    /* height: 100px; */
+}
+.icon i {
+    font-size: 30px;
+    padding: 10px 0;
+    color: var(--section-background);
+
+}
+.lists ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 60%;
+
+}
+.lists li {
+    padding-left: 30px;
+    list-style: none;
+}
+.lists a {
+    color: var(--section-background);
+    text-decoration:none;
+    transition: 0.5s ease;
+    font-weight: bold;
+  
+}
+.lists a .i-1 {
+    position: relative;
+}
+.lists a:hover {
+    color: var(--third-color);
+}
+.lists .i-1::after {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--third-color);
+    margin-top: 25px;
+    margin-left: -45px;
+}
+.lists {
+    margin-left: 80px;
+}
+.start-login {
+    margin-top: 15px;
+    margin-right: 15px;
+
+    
+}
+
+
+.start-login a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: var(--section-background);
+
+}
+.search input {
+    margin-top: 8px;
+    margin-left: -80px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    width: 400px;
+    position: relative;
+
+}
+.search .fa-sharp {
+    color: var(--section-background);
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 15px;
+    color: var(--secondary-color);
+
+
+}
+.fa-solid {
+    font-size: 25px;
+}
+#loginLogout {
+    background-color: #e91010;
+    padding: 10px;
+}
+/* End Header Section */
+/* Start Background Photo */
+
+.show {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 600px;
+
+}
+.show img {
+    width: 100%;
+    object-fit: cover;
+}
+/* End Background Photo */
+/* Start Phone Section */
+
+.Phone-tablet {
+    width: 100%;
+}
+.head h2 {
+    margin-left: calc((100% - 200px) / 2);
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    position: relative;
+}
+.head h2::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 4px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: -180px;
+
+}
+.accessories .head h2::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 4px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: -180px;
+}
+
+.img-sec1-start,
+.img-sec1-start img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.imgs-sec1 img {
+    width:200px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.sec-1 .imgs-sec1 .cards {
+    margin: 40px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-1 .imgs-sec1 .card-1,
+.sec-1 .imgs-sec1 .card-2,
+.sec-1 .imgs-sec1 .card-3,
+.sec-1 .imgs-sec1 .card-4 {
+    width: 200px;
+    height: 150px;
+    box-shadow: black 10px 20px 20px;
+    padding: 20px;
+    
+}
+.butt-sec1 {
+    margin-left: calc((100% - 200px) / 2);
+    
+}
+.contain  button {
+    background-color: var(--secondary-color);
+    color: var(--section-background);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.contain button:hover {
+    font-size: 20px;
+    color: var(--third-color);
+}
+/* End Phone Section */
+/* Start Lap Section */
+.lap {
+    margin-top: 500px;
+    margin-bottom: 400px;
+
+}
+.img-sec2-start,
+.img-sec2-start img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.sec-2 .imgs-sec2 .card-1, 
+.sec-2 .imgs-sec2 .card-2, 
+.sec-2 .imgs-sec2 .card-3, 
+.sec-2 .imgs-sec2 .card-4 {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    box-shadow: black 10px 20px 20px;
+
+ 
+
+}
+
+.imgs-sec2 .cards img {
+    width:350px;
+    height: 150px;
+    margin: 20px 0;
+    object-fit:contain;
+    
+}
+.sec-2 .imgs-sec2 .cards {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.sec-2 .imgs-sec2 .contain {
+    width: 200px;
+    margin-left: 70px;
+    
+}
+
+/* End Lap Section */
+/* Start accessories Section */
+.accessories {
+    margin-bottom: 400px
+
+
+}
+.img-sec3-start,
+.img-sec3-start img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.sec-3 .imgs-sec3 .card-1, 
+.sec-3 .imgs-sec3 .card-2, 
+.sec-3 .imgs-sec3 .card-3, 
+.sec-3 .imgs-sec3 .card-4 {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+    box-shadow: black 10px 20px 20px;
+
+}
+
+.imgs-sec3 .cards img {
+    width:350px;
+    height: 150px;
+    margin: 20px 0;
+    object-fit:contain;
+    
+}
+.sec-3 .imgs-sec3 .cards {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.sec-3 .imgs-sec3 .contain {
+    width: 200px;
+    margin-left: 70px;
+    
+}
+
+/* End accessories Section */
+/* Start Tablet Section */
+.tablet {
+    margin-bottom: 400px;
+
+}
+.img-sec3-start,
+.img-sec3-start img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.sec-3 .imgs-sec3 .card-1 
+.sec-3 .imgs-sec3 .card-2 
+.sec-3 .imgs-sec3 .card-3 
+.sec-3 .imgs-sec3 .card-4 {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+.imgs-sec3 .cards img {
+    width:350px;
+    height: 150px;
+    margin: 20px 0;
+    object-fit:contain;
+    
+}
+.sec-3 .imgs-sec3 .cards {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.sec-3 .imgs-sec3 .contain {
+    width: 200px;
+    margin-left: 70px;
+    
+}
+
+/* End Tablet Section */
+/* Start Offer Section */
+.offer {
+    margin: 300px 0; 
+}
+/* End Offer Section */
+/* Start Sales Section */
+.sales {
+    margin: 300px 0; 
+}
+/* End Sales Section */
+/* Strat Footer Section */
+.footer {
+    background-color: var(--secondary-color);
+    padding: 50px;
+    
+
+    width: 100%;
+}
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    color: var(--section-background);
+    margin-top: 0;
+ 
+
+}
+.first-section .Make-Money {
+    margin-bottom: 70px;
+}
+.first-section .Help {
+    margin-bottom: 40px;
+}
+.sign-up .sub input {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sign-up input {
+    margin: 10px 0;
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.sochial i {
+    padding-left: 80px;
+    padding-top: 20px;
+ 
+}
+.third-section {
+    color: var(--section-background);
+}
+
+.fa-brands  {
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+/* End Footer Section */
